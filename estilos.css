@@ -29,7 +29,7 @@ body {
     margin: 8px 0;
 }
 
-.container .botoes, .botoes1, .botoes2 {
+.botoes, .botoes1, .botoes2 {
     appearance: none;
     width: 172px;
     height: 216px;
@@ -47,7 +47,7 @@ body {
     margin: 20px 0 10px 0;
 }
 
-.botoes:focus, .botoes1:focus, .botoes2:focus  {
+.selecionado, .selecionado2, .selecionado3 {
     border: 5px solid #32B72F;
 }
 
@@ -71,11 +71,10 @@ body {
     height: 15px;
     bottom: 10px;
     right: 10px;
-    z-index: 1;
     opacity: 0;
 }
 
-.botoes:focus > ion-icon, .botoes1:focus > ion-icon, .botoes2:focus > ion-icon {
+.selecionado > ion-icon, .selecionado2 > ion-icon, .selecionado3 > ion-icon {
     color: #32B72F;
     opacity: 1;
 }
