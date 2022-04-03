@@ -12,8 +12,11 @@ let valorTotal = "";
 
 let comidase = "";
 
+let nomeCLiente = "";
+let enderecoCliente = "";
 
-
+let mensagemCodi = "";
+let mensagemPronta = "";
 
 function estaSelecionadoComida(botaoComida){
     const botaoSelecionado = document.querySelector(".selecionado");
@@ -88,7 +91,7 @@ function estaSelecionadoPudim(botaoPudim){
 
 function trocarValores(){
     valorTotal = Number(valorComida) + Number(valorBebida) + Number(valorPudim);
-    document.querySelector(".valorTotal").innerHTML = `R$ ${valorTotal}`;
+    document.querySelector(".valorTotal").innerHTML = `R$ ${valorTotal.toFixed(2)}`;
 }
 
 
@@ -100,6 +103,7 @@ function verificarItens(){
     trocarValores();
     estaCerto.innerHTML = "Fechar pedido";
     estaCerto.classList.add("botaoVerificado");
+    
     pedidoOk = 1;
 }
 }
@@ -107,6 +111,8 @@ function verificarItens(){
 function finalizarPedido(){
     const finaliza = document.querySelector(".fundo-confirmarPedido");
     if(pedidoOk === 1){
+        nomeCLiente = prompt("Qual seu nome?");
+        enderecoCliente = prompt("Qual seu endereço?")
         finaliza.classList.remove("ocultar");
     }
 }
@@ -114,3 +120,21 @@ function finalizarPedido(){
 function botaoCancelar(){
     window.location.reload();
 } 
+
+
+
+function enviarPedido(){
+mensagemPronta = 
+`Olá, gostaria de fazer o pedido:
+- Prato: ${nomeComida}
+- Bebida: ${nomeBebida}
+- Sobremesa: ${nomePudim}
+Total: R$ ${valorTotal}
+
+Nome: ${nomeCLiente}
+Endereço: ${enderecoCliente}`;
+mensagemCodi = encodeURIComponent(mensagemPronta);
+    window.open(`https://wa.me/5543999725094?text=${mensagemCodi}`);
+}
+
+
