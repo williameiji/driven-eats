@@ -120,6 +120,10 @@ button.selecionado, button.selecionado1, button.selecionado2 {
     border: 0;
 }
 
+.botaoRecusado {
+    pointer-events:none; 
+}
+
 .botaoVerificado {
     background-color: #32B72F;
 }
