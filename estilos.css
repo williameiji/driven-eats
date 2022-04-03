@@ -6,8 +6,16 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
 * {
     box-sizing: border-box;
+}
+
+.comidas, .bebidas, .pudim, .valores {
+    font-size: 16px;
 }
 
 .topo {
@@ -25,7 +33,7 @@ body {
     margin: 92px 15px;
 }
 
-.contComidas > p {
+.contComidas > p, .contBebidas > p, .contPudim > p {
     margin: 8px 0;
 }
 
@@ -47,7 +55,7 @@ body {
     margin: 20px 0 10px 0;
 }
 
-.selecionado, .selecionado2, .selecionado3 {
+button.selecionado, button.selecionado1, button.selecionado2 {
     border: 5px solid #32B72F;
 }
 
@@ -74,7 +82,7 @@ body {
     opacity: 0;
 }
 
-.selecionado > ion-icon, .selecionado2 > ion-icon, .selecionado3 > ion-icon {
+.selecionado > ion-icon, .selecionado1 > ion-icon, .selecionado2 > ion-icon {
     color: #32B72F;
     opacity: 1;
 }
@@ -83,30 +91,112 @@ body {
 .bot {
     width: 100%;
     height: 92px;
-    background-color: blue;
+    background-color: white;
     position: fixed;
     bottom: 0;
     right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2;
+    z-index: 1;
+    padding: 0 30px;
 }
 
 .bot > button {
+    font-family:'Roboto', sans-serif;
     width: 364px;
     height: 61px;
     border-radius: 50px;
     font-size: 20px;
     text-align: center;
+    padding: 0 30px;
+    border: 0;
+}
+
+.botaoVerificado {
+    background-color: #32B72F;
 }
 
 
+
+.fundo-confirmarPedido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(1, 1, 1, 0.9);
+    z-index: 99;
+}
+
+.confirmarPedido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 377px;
+    height: 353px;
+    background-color: #50D074;
+    border-radius: 9px;
+    padding: 20px;
+}
+
+.tudoCerto {
+    background-color: white;
+    width: 329px;
+    height: 52px;
+    border: 0px;
+    border-radius: 50px;
+}
+
+.cancelar {
+    background-color: #50D074;
+    width: 329px;
+    height: 52px;
+    border: 0;
+    border-radius: 50px;
+}
+
+.ocultar {
+    display: none;
+}
+
+.ProdutosValores {
+    width: 329px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.ProdutosValores p {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.ProdutosValores > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.valores {
+    text-align: right;
+}
 
 /* FORMATAÇÃO */
 
 .cinza {
     color: #A6A6A6;
+}
+
+.verde {
+    color: #50D074;
+}
+
+.branco {
+    color: #FFFFFF;
 }
 
 .fontRight {
@@ -121,6 +211,14 @@ body {
     font-size: 26px;
 }
 
+.f22 {
+    font-size: 22px;
+}
+
+.f20 {
+    font-size: 20px;
+}
+
 .f18 {
     font-size: 18px;
     margin-left: 2px;
@@ -132,6 +230,10 @@ body {
 
 .f15 {
     font-size: 15px;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 /* FORMATAÇÃO */
