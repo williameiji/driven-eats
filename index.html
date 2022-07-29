@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="./src/assets/css/reset.css">
+    <link rel="stylesheet" href="./src/assets/css/estilos.css">
     <title>DrivenEats</title>
     <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
@@ -14,21 +14,19 @@
 </head>
 <body>
     
-    <div class="topo">
+    <header class="topo">
         <p class="fontRight f44">DrivenEats</p>
         <p class="f18">Sua comida em 6 minutos</p>
-    </div>
+    </header>
 
-
-    <div class="container">
+    <main class="container">
         <p class="fontRight f26">Primeiro, seu prato</p>
         <div class="comida">
             <div class="scroll">
-                <!--  -->
                 <button class="botoes" onclick="estaSelecionadoComida(this)">
                     <ion-icon name="checkmark-circle"></ion-icon>
                     <div class="contComidas">
-                        <img src="/projeto3-driveneats/imagens/frango_yin_yang 1.png">
+                        <img src="./src/assets/imagens/frango_yin_yang 1.png">
                         <p class="comidas">Frango Yin Yang</p>
                         <p class="f15 cinza">Um pouco de batata, um pouco de salada</p>
                         <p class="valoresc">R$ 14,00</p>
@@ -38,7 +36,7 @@
                 <button class="botoes" onclick="estaSelecionadoComida(this)">
                     <ion-icon name="checkmark-circle"></ion-icon>
                     <div class="contComidas">
-                        <img src="/projeto3-driveneats/imagens/frango_yin_yang 1.png">
+                        <img src="./src/assets/imagens/frango_yin_yang 1.png">
                         <p class="comidas">Frango Yin</p>
                         <p class="f15 cinza">Um pouco de batata, um pouco de salada</p>
                         <p class="valoresc">R$ 15,00</p>
@@ -48,7 +46,7 @@
                 <button class="botoes" onclick="estaSelecionadoComida(this)">
                     <ion-icon name="checkmark-circle"></ion-icon>
                     <div class="contComidas">
-                        <img src="/projeto3-driveneats/imagens/frango_yin_yang 1.png">
+                        <img src="./src/assets/imagens/frango_yin_yang 1.png">
                         <p class="comidas">Frango Yang</p>
                         <p class="f15 cinza">Um pouco de batata, um pouco de salada</p>
                         <p class="valoresc">R$ 16,00</p>
@@ -58,24 +56,22 @@
                 <button class="botoes" onclick="estaSelecionadoComida(this)">
                     <ion-icon name="checkmark-circle"></ion-icon>
                     <div class="contComidas">
-                        <img src="/projeto3-driveneats/imagens/frango_yin_yang 1.png">
+                        <img src="./src/assets/imagens/frango_yin_yang 1.png">
                         <p class="comidas">Frango Zen</p>
                         <p class="f15 cinza">Um pouco de batata, um pouco de salada</p>
                         <p class="valoresc">R$ 17,00</p>
                     </div>
                 </button> 
-
             </div>
         </div>
         
         <p class="fontRight f26">Agora, sua bebida</p>
         <div class="bebida">
-            
             <div class="scroll">
                 <button class="botoes1" onclick="estaSelecionadoBebida(this)">
                     <ion-icon name="checkmark-circle"></ion-icon>
                     <div class="contBebidas">
-                        <img src="/projeto3-driveneats/imagens/coquinha_gelada 1.png">
+                        <img src="./src/assets/imagens/coquinha_gelada 1.png">
                         <p class="bebidas">Coquinha gelada</p>
                         <p class="f15 cinza">Lata 350ml</p>
                         <p class="valoresb">R$ 4,00</p>
@@ -85,7 +81,7 @@
                 <button class="botoes1" onclick="estaSelecionadoBebida(this)">
                     <ion-icon name="checkmark-circle"></ion-icon>
                     <div class="contBebidas">
-                        <img src="/projeto3-driveneats/imagens/coquinha_gelada 1.png">
+                        <img src="./src/assets/imagens/coquinha_gelada 1.png">
                         <p class="bebidas">Coquinha gelada (1)</p>
                         <p class="f15 cinza">Lata 350ml</p>
                         <p class="valoresb">R$ 4,50</p>
@@ -95,7 +91,7 @@
                 <button class="botoes1" onclick="estaSelecionadoBebida(this)">
                     <ion-icon name="checkmark-circle"></ion-icon>
                     <div class="contBebidas">
-                        <img src="/projeto3-driveneats/imagens/coquinha_gelada 1.png">
+                        <img src="./src/assets/imagens/coquinha_gelada 1.png">
                         <p class="bebidas">Coquinha gelada (2)</p>
                         <p class="f15 cinza">Lata 350ml</p>
                         <p class="valoresb">R$ 5,00</p>
@@ -105,7 +101,7 @@
                 <button class="botoes1" onclick="estaSelecionadoBebida(this)">
                     <ion-icon name="checkmark-circle"></ion-icon>
                     <div class="contBebidas">
-                        <img src="/projeto3-driveneats/imagens/coquinha_gelada 1.png">
+                        <img src="./src/assets/imagens/coquinha_gelada 1.png">
                         <p class="bebidas">Coquinha gelada (3)</p>
                         <p class="f15 cinza">Lata 350ml</p>
                         <p class="valoresb">R$ 5,50</p>
@@ -116,12 +112,11 @@
     
         <p class="fontRight f26">Por fim, sua sobremesa</p>
         <div class="sobremesa">
-            
             <div class="scroll" >
                 <button class="botoes2" onclick="estaSelecionadoPudim(this)">
                     <ion-icon name="checkmark-circle"></ion-icon>
                     <div class="contPudim">
-                        <img src="/projeto3-driveneats/imagens/pudim 1.png">
+                        <img src="./src/assets/imagens/pudim 1.png">
                         <p class="pudim">Pudim</p>
                         <p class="f15 cinza">Apenas pudim</p>
                         <p class="valoresp">R$ 7,00</p>
@@ -131,7 +126,7 @@
                 <button class="botoes2" onclick="estaSelecionadoPudim(this)">
                     <ion-icon name="checkmark-circle"></ion-icon>
                     <div class="contPudim">
-                        <img src="/projeto3-driveneats/imagens/pudim 1.png">
+                        <img src="./src/assets/imagens/pudim 1.png">
                         <p class="pudim">Pudim (1)</p>
                         <p class="f15 cinza">Apenas pudim</p>
                         <p class="valoresp">R$ 7,50</p>
@@ -141,7 +136,7 @@
                 <button class="botoes2" onclick="estaSelecionadoPudim(this)">
                     <ion-icon name="checkmark-circle"></ion-icon>
                     <div class="contPudim">
-                        <img src="/projeto3-driveneats/imagens/pudim 1.png">
+                        <img src="./src/assets/imagens/pudim 1.png">
                         <p class="pudim">Pudim (2)</p>
                         <p class="f15 cinza">Apenas pudim</p>
                         <p class="valoresp">R$ 8,00</p>
@@ -151,24 +146,21 @@
                 <button class="botoes2" onclick="estaSelecionadoPudim(this)">
                     <ion-icon name="checkmark-circle"></ion-icon>
                     <div class="contPudim">
-                        <img src="/projeto3-driveneats/imagens/pudim 1.png">
+                        <img src="./src/assets/imagens/pudim 1.png">
                         <p class="pudim">Pudim (3)</p>
                         <p class="f15 cinza">Apenas pudim</p>
                         <p class="valoresp">R$ 8,50</p>
                     </div>
                 </button>
-
             </div>
         </div>
-    </div>
+    </main>
 
-
-    <div class="bot">
+    <footer class="bot">
         <button class="fecharPedido f20" onclick="finalizarPedido()">Selecione os 3 itens para fechar o pedido</button>
-    </div>
+    </footer>
 
-
-    <div class="fundo-confirmarPedido ocultar" >
+    <aside class="fundo-confirmarPedido ocultar" >
         <div class="confirmarPedido">
             <div class="f22 branco bold">Confirme seu pedido</div>
             <div class="ProdutosValores">
@@ -188,10 +180,8 @@
             <button class="tudoCerto f22 verde" onclick="enviarPedido()">Tudo certo, pode pedir</button>
             <button class="cancelar f20 branco" onclick="botaoCancelar()">Cancelar</button>
         </div>
-    </div>
+    </aside>
 
-    <script src="scripts.js"></script>
-    
-    
+    <script src="./scripts.js"></script>
 </body>
 </html>
