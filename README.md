@@ -1,29 +1,43 @@
-# DrivenEats
+# <p align = "center"> DrivenEats Frontend </p>
 
 <div align="center">
 <img src="https://user-images.githubusercontent.com/86417618/173119887-bbb953ae-fc1d-43dd-a56c-41390ee05450.gif">
 </div>
 
-
-## About
+##  :clipboard: Description
 
 An app for ordering food that allows you to send your order via WhatsApp (for mobile)
 
 Check project running [here](https://driven-eats-phi.vercel.app)
 
+***
 
-## Built With
+## :computer:	 Technologies and Concepts
 
-<img align="left" alt="html5" width="50px" src="https://user-images.githubusercontent.com/86417618/173115788-0e76d2d5-0987-419d-b619-e30665201b22.svg" />
-<img align="left" alt="css3" width="50px" src="https://user-images.githubusercontent.com/86417618/173111082-08db0001-1f48-40b1-ad7b-78c7c2b86f8d.svg" />
-<img align="left" alt="javascript" width="50px" src="https://user-images.githubusercontent.com/86417618/173069712-169e17ab-559e-47db-9336-5b41e79cc3fc.svg" />
+- HTML5
+- Node.js
+- JavaScript
+- CSS
 
-<br />
-<br />
+***
 
-## Installing
+## 🏁 Running the application
 
-**Cloning the Repository**
+This project was started with the [React](reactjs.org), so make sure you have the latest stable version of [Node.js](https://nodejs.org/en/download/) and [npm](https://www.npmjs.com/) running locally.
+
+
+First, clone this repository on your machine:
 ```
-$ git clone https://github.com/williameiji/driven-eats.git
+$ git clone https://github.com/williameiji/driven-eats
+```
+
+Then, inside the folder, run the following command to install the dependencies.
+
+```
+npm install
+```
+
+Finished the process, just start the server
+```
+npm start
 ```
